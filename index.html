@@ -1,150 +1,140 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>GreenNotGreed</title>
-  <link rel="stylesheet" href="styles.css">
-
-  <style>
-   #countdownTable table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-
-  #countdownTable td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-
-  #countdownTable tr:nth-child(even) {
-    background-color: #fbfbfb;
-  }
-
-  #leaderboard table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-
-  #leaderboard td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-
-  #leaderboard tr:nth-child(even) {
-    background-color: #dddddd;
-  }
-  </style>
-</head>
-
-<body background="https://static.vecteezy.com/system/resources/previews/001/907/845/non_2x/light-recycled-paper-texture-free-photo.jpg">
-  <h1>Green Not Greed</h1>
-  
-  <h2>Countdown Timer Placeholder</h2>
-  <table id="countdownTable">
-    <tr>
-      <td>days</td>
-      <td>mins</td>
-      <td>hour</td>
-      <td>sec</td>
-    </tr>
-    <tr id="countdownTimer">
-    </tr>
-  </table>
-  
-  <div id="leaderboard">
-    <table>
-      <tr>
-        <th>Place</th>
-        <th>Name</th>
-        <th>Points</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Timothy Lim</td>
-        <td>284,000</td>
-      </tr>
-        <tr>
-        <td>2</td>
-        <td>Goldwyn Hue</td>
-        <td>245,300</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Jurgen Lim</td>
-        <td>244,890</td>
-      </tr>
-        <tr>
-        <td>4</td>
-        <td>Thierry Ku</td>
-        <td>240,500</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Jees Robert</td>
-        <td>237,900</td>
-      </tr>
-        <tr>
-        <td>6</td>
-        <td>Silver Koh</td>
-        <td>234,000</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>Alamon Tiamzon</td>
-        <td>233,900</td>
-      </tr>
-        <tr>
-        <td>8</td>
-        <td>Goh Shi Jun</td>
-        <td>230,400</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>Tan Ah Kao</td>
-        <td>230,320</td>
-      </tr>
-        <tr>
-        <td>10</td>
-        <td>Lorem Ipsum</td>
-        <td>229,105</td>
-      </tr>
-    </table>
-  </div>
-  
-  <p id="demo">hue</p>
-  
-  <script>
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("countdownTimer").innerHTML = "<td>" + days + "</td><td>" + hours + "</td><td>"
-  + minutes + "</td><td>" + seconds + "</td>";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdownTimer").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-
-</body>
+   <head>
+      <title>GreenNotGreed</title>
+      <link rel="stylesheet" href="styles.css">
+      <style>
+         #countdownTable table {
+         font-family: arial, sans-serif;
+         border-collapse: collapse;
+         width: 100%;
+         }
+         #countdownTable td, th {
+         border: 1px solid #dddddd;
+         text-align: left;
+         padding: 8px;
+         }
+         #countdownTable tr:nth-child(even) {
+         background-color: #fffff;
+         }
+         #leaderboard table {
+         font-family: arial, sans-serif;
+         border-collapse: collapse;
+         width: 100%;
+         background-color: #ffffff;
+         }
+         #leaderboard td, th {
+         border: 1px solid #dddddd;
+         text-align: left;
+         padding: 8px;
+         }
+         #leaderboard tr:nth-child(even) {
+         background-color: #dddddd;
+         }
+      </style>
+   </head>
+   <body background="https://static.vecteezy.com/system/resources/previews/001/907/845/non_2x/light-recycled-paper-texture-free-photo.jpg">
+      <h1>Green Not Greed</h1>
+      <h2>Countdown Timer Placeholder</h2>
+      <div id="countdownTable">
+         <table>
+            <tr>
+               <td>days</td>
+               <td>mins</td>
+               <td>hour</td>
+               <td>sec</td>
+            </tr>
+            <tr id="countdownTimer">
+            </tr>
+         </table>
+      </div>
+      <div id="leaderboard">
+         <table>
+            <tr>
+               <th>Place</th>
+               <th>Name</th>
+               <th>Points</th>
+            </tr>
+            <tr>
+               <td>1</td>
+               <td>Timothy Lim</td>
+               <td>284,000</td>
+            </tr>
+            <tr>
+               <td>2</td>
+               <td>Goldwyn Hue</td>
+               <td>245,300</td>
+            </tr>
+            <tr>
+               <td>3</td>
+               <td>Jurgen Lim</td>
+               <td>244,890</td>
+            </tr>
+            <tr>
+               <td>4</td>
+               <td>Thierry Ku</td>
+               <td>240,500</td>
+            </tr>
+            <tr>
+               <td>5</td>
+               <td>Jees Robert</td>
+               <td>237,900</td>
+            </tr>
+            <tr>
+               <td>6</td>
+               <td>Silver Koh</td>
+               <td>234,000</td>
+            </tr>
+            <tr>
+               <td>7</td>
+               <td>Alamon Tiamzon</td>
+               <td>233,900</td>
+            </tr>
+            <tr>
+               <td>8</td>
+               <td>Goh Shi Jun</td>
+               <td>230,400</td>
+            </tr>
+            <tr>
+               <td>9</td>
+               <td>Tan Ah Kao</td>
+               <td>230,320</td>
+            </tr>
+            <tr>
+               <td>10</td>
+               <td>Lorem Ipsum</td>
+               <td>229,105</td>
+            </tr>
+         </table>
+      </div>
+      <script>
+         // Set the date we're counting down to
+         var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+         
+         // Update the count down every 1 second
+         var x = setInterval(function() {
+         
+           // Get today's date and time
+           var now = new Date().getTime();
+             
+           // Find the distance between now and the count down date
+           var distance = countDownDate - now;
+             
+           // Time calculations for days, hours, minutes and seconds
+           var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+           var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+           var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+             
+           // Output the result in an element with id="demo"
+           document.getElementById("countdownTimer").innerHTML = "<td>" + days + "</td><td>" + hours + "</td><td>"
+           + minutes + "</td><td>" + seconds + "</td>";
+             
+           // If the count down is over, write some text 
+           if (distance < 0) {
+             clearInterval(x);
+             document.getElementById("countdownTimer").innerHTML = "EXPIRED";
+           }
+         }, 1000);
+      </script>
+   </body>
