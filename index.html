@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>GreenNotGreed</title>
+  <link rel="stylesheet" href="styles.css">
+
   <style>
-  table {
+   #countdownTable table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
   }
 
-  td, th {
+  #countdownTable td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
   }
 
-  tr:nth-child(even) {
+  #countdownTable tr:nth-child(even) {
+    background-color: #fbfbfb;
+  }
+
+  #leaderboard table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #leaderboard td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  #leaderboard tr:nth-child(even) {
     background-color: #dddddd;
   }
   </style>
-  <title>GreenNotGreed</title>
-  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body background="https://static.vecteezy.com/system/resources/previews/001/907/845/non_2x/light-recycled-paper-texture-free-photo.jpg">
   <h1>Green Not Greed</h1>
   
   <h2>Countdown Timer Placeholder</h2>
-  <table>
+  <table id="countdownTable">
     <tr>
       <td>days</td>
       <td>mins</td>
