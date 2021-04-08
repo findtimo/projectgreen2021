@@ -4,25 +4,26 @@
       <title>GreenNotGreed</title>
       <link rel="stylesheet" href="styles.css">
       <style>
+		body {
+		  font-family: sans-serif;
+		  margin:0;
+		}
          #countdownTable table {
-         
-         font-family: arial, sans-serif;
          border-collapse: collapse;
          width: 100%;
          }
          #countdownTable td, th {
-         padding: 8px;
+         padding: 2px;
          text-align: center;
-         background-color: #ffffff;
+		 width:25%;
          }
          #leaderboard table {
-         font-family: arial, sans-serif;
          border-collapse: collapse;
-         width: 100%;
          background-color: #ffffff;
          padding: 50px;
-         margin: 20px;
-         border-radius: 25px;
+		 width:100%;
+         border-radius: 10px;
+		 box-shadow: 0px 10px 10px rgba(71, 49, 180, 0.3);
          }
          #leaderboard td, th {
          text-align: left;
@@ -32,20 +33,25 @@
       </style>
    </head>
    <body background="https://static.vecteezy.com/system/resources/previews/001/907/845/non_2x/light-recycled-paper-texture-free-photo.jpg">
-      <h1>Green Not Greed</h1>
-      <div id="countdownTable">
-         <table>
-            <tr>
-               <td>days</td>
-               <td>mins</td>
-               <td>hour</td>
-               <td>sec</td>
-            </tr>
-            <tr id="countdownTimer">
-            </tr>
-         </table>
+      
+	  <div style="background-color:#1f4e24;margin:auto;margin-bottom:10px;padding:2em;padding-left:4em;padding-right:4em;">
+		<h1 style="color:#ffffff;margin:0;font-size:1.5em;">PROJECT GREEN NOT GREED</h1>
       </div>
-      <div id="leaderboard">
+	  <div style="margin-top:1.5em;margin-bottom:1.5em;padding-left:4em;padding-right:4em;" id="countdownTable">
+         <div style="background-color:white; padding:5px; border-radius:10px; box-shadow: 0px 10px 10px rgba(71, 49, 180, 0.3);">
+			 <table>
+				<tr style="font-size:3em; "id="countdownTimer">
+				</tr>
+				<tr>
+				   <td>days</td>
+				   <td>mins</td>
+				   <td>hour</td>
+				   <td>sec</td>
+				</tr>
+			 </table>
+		 </div>
+      </div>
+      <div style="margin-top:1em;margin-bottom:1em;padding-left:4em;padding-right:4em;" id="leaderboard">
          <table>
             <tr>
                <th>Place</th>
